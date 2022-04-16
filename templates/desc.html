@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bunkershop | Buy a product</title>
+    </head>
+    <body>
+        <img src="http://127.0.0.1:5000/static/Cheese.jpg" height="300" width="500">
+        <p id="name">{{ i[0] }}</p>
+        <p id="price">{{ i[1] }}BKC</p>
+        <p><a id="buy-button" href="/order/{{ pid }}">Buy now</a></p>
+        <p id="desc">{{ desc|safe }}</p>
+    </body>
+</html>
