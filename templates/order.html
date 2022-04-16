@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bunkershop</title>
+    </head>
+    <body>
+        You wanna order the {{name}}? Great.<br>
+        Send {{price}}BKC to <a href="bunkercoin:BHKGATf2uX1TcrPimU137dvaAm4EY78yz7">BHKGATf2uX1TcrPimU137dvaAm4EY78yz7</a>. Then come back here, add you txid and email in the fields below, and hit submit. You can also use the QR code down below to send the bunkercoin.
+        <form action="/txid" method="POST">
+            <input type="hidden" name="id" value="{{id}}">
+            <label for="txid">TXID:</label>
+            <input type="text" id="txid" name="txid" required><br>
+            <label for="email">email:</label>
+            <input type="email" name="email" id="email" required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
