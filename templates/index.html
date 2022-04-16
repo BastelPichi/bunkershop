@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bunkershop</title>
+    </head>
+    <body>
+        <p>Welcome to the Bunkershop!<br>Click on any of the below products to see more details, and to buy.</p>
+        {% for i in data %}
+        <a href="/desc/{{ i[0] }}">
+        <img src="/static/{{ i[1] }}.jpg" width="500" height="300"></img><br>
+        {{ i[1] }}: {{ i[2] }}BKC</a><br><br><br>
+        {% endfor %}
+    </body>
+</html>
